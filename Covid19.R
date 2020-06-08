@@ -18,7 +18,6 @@ docs <- tm_map(docs, toSpace, "@")
 docs <- tm_map(docs, toSpace, "\\|")
 
 
-docs <- tm_map(docs, removeWords, c("blabla1", "blabla2"))
 
 docs <- tm_map(docs, removePunctuation)
 docs <- tm_map(docs, removeNumbers)
